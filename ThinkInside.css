@@ -7,6 +7,22 @@ body {
     font-weight: 400;
 }
 
+a {
+    color: #2073a4;
+}
+
+input[type=text] {
+    padding: 4px 8px;
+    border: 1px solid #2073a4;
+}
+
+input[type=button] {
+    padding: 4px 16px;
+    background: #2073a4;
+    border: 0 none;
+    color: white;
+}
+
 #header {
     background: #2073a4;
     height: 48px;
@@ -92,8 +108,58 @@ body {
     margin: 8px 16px 0;
 }
 
-#blog-sidecolumn {
-    margin: 0 16px 0;
+#blog-sidecolumn a {
+    padding: 4px 8px;
+    line-height: 24px;
+}
+
+#sidebar_search h3, #sidebar_shortcut h3 {
+    display: none;
+}
+
+#sidebar_search_box {
+    margin: 16px;
+}
+
+.input_my_zzk {
+    width: 60% !important;
+}
+
+input.btn_my_zzk {
+    width: 30%;
+    height: 30px;
+}
+
+#sideBarMain #sidebar_shortcut ul {
+    margin: 0 0 48px;
+}
+
+#sidebar_shortcut a {
+    display: block;
+    padding: 8px 16px;
+    line-height: 32px;
+    color: #141414;
+    font-size: 17px;
+}
+
+#sidebar_shortcut a:hover {
+    background: #2073a4;
+    color: white;
+}
+
+.catListTitle {
+    font-size: 16px;
+    line-height: 36px;
+    color: white;
+    font-weight: 300;
+    text-shadow: none;
+    border: none;
+    background: #2073a4;
+    padding: 0 16px;
+}
+
+#sideBarMain ul {
+    margin: 8px;
 }
 
 #footer {
@@ -195,6 +261,9 @@ blockquote {
     }
     #sideBar {
         padding-right: 0 !important;
+    }
+    #sidebar_shortcut {
+        display: none !important;
     }
     .blogStats {
         display: none !important;
