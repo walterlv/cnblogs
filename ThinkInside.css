@@ -21,6 +21,18 @@ input[type=button] {
     background: #2073a4;
     border: 0 none;
     color: white;
+    transition-property: box-shadow;
+    transition-duration: 0.3s;
+}
+
+input[type=button]:hover {
+    background: #2580b4;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+}
+
+input[type=button]:active {
+    box-shadow: none;
+    background: #165f8a;
 }
 
 #header {
@@ -98,10 +110,17 @@ input[type=button] {
     line-height: 32px;
 }
 
-#about p {
+#about h3 {
     font-size: 16px;
     line-height: 24px;
     font-weight: 300;
+}
+
+#about p {
+    font-size: 13px;
+    line-height: 18px;
+    margin: 12px 0;
+    color: #999;
 }
 
 #profile_block {
@@ -247,6 +266,73 @@ blockquote {
     text-shadow: none;
 }
 
+#green_channel {
+    border: none;
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    border-color: #e5e5e5;
+    width: 100%;
+}
+
+#green_channel a {
+    background: inherit;
+    display: inline-block;
+    padding: 8px 24px;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    cursor: pointer;
+    margin-right: 4px;
+    text-shadow: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+#green_channel a:hover {
+    background: inherit;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+}
+
+#green_channel #green_channel_digg, #green_channel #green_channel_follow, #green_channel #green_channel_favorite {
+    background-color: #2073a4;
+}
+
+.feedback_area_title {
+    font-weight: inherit;
+    border-bottom: 2px solid #e7e9ee;
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 48px;
+}
+
+#blog-comments-placeholder, #comment_form {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+div.commentform input.author, div.commentform input.email, div.commentform input.url {
+    background-image: none;
+    border: 1px solid #2073a4;
+    padding: 4px 16px;
+    width: inherit;
+    font-size: 14px;
+}
+
+div.commentform textarea {
+    width: 100%;
+    height: 120px;
+    font-size: 15px;
+    border: 1px solid #2073a4;
+    font-family: inherit;
+    padding: 4px 8px;
+}
+
+.comment_btn {
+    height: inherit;
+    width: inherit;
+}
+
 @media only screen and (max-width: 767px) {
     #mainContent {
         padding: 0 !important;
@@ -273,6 +359,14 @@ blockquote {
     }
     #banner img {
         max-width: 100% !important;
+    }
+    div.commentform textarea {
+        width: 100%px !important;
+        margin: 0 auto !important;
+        height: 120px !important;
+    }
+    #green_channel #green_channel_digg, #green_channel #green_channel_follow, #green_channel #green_channel_favorite {
+        padding: 4px 16px !important;
     }
 }
 
